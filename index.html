@@ -93,12 +93,10 @@
                 <div class="contact-card">
                     <i class="fas fa-map-marker-alt"></i>
                     <h3>Ubicación</h3>
-                    <!-- ACTUALIZA ESTA DIRECCIÓN -->
-                    <p>Calle Real 123, Córdoba, Argentina</p>
+                    <p>Av. Roque Sáenz Peña 47, Bialet Massé</p>
                 </div>
             </section>
 
-            <!-- SECCIÓN DEL MAPA ACTUALIZADA -->
             <section class="map-section">
                 <div class="container">
                     <div class="section-title">
@@ -106,7 +104,6 @@
                         <p>Ven a visitarnos o pide para retirar por nuestro local.</p>
                     </div>
                     
-                    <!-- REEMPLAZADO: Contenedor de Leaflet por tu iframe de Google Maps -->
                     <div class="map-embed-container">
                         <iframe 
                             src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d6817.6959124335435!2d-64.46668851069397!3d-31.307947198104166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDE4JzI2LjIiUyA2NMKwMjcnNDguMCJX!5e0!3m2!1ses!2sar!4v1765820066938!5m2!1ses!2sar" 
@@ -120,7 +117,6 @@
                     </div>
                     
                     <div class="map-info">
-                        <!-- ACTUALIZA LA DIRECCIÓN AQUÍ TAMBIÉN -->
                         <p><i class="fas fa-info-circle"></i> <strong>Dirección:</strong> Av. Roque Sáenz Peña 47, Bialet Massé</p>
                         <p><i class="fas fa-car"></i> <strong>Estacionamiento:</strong> Disponible en la puerta.</p>
                     </div>
@@ -129,6 +125,14 @@
 
         </div>
     </main>
+
+    <!-- Modal para imágenes (NUEVO) -->
+    <div id="imageModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <img id="modalImage" class="modal-img" src="" alt="">
+        </div>
+    </div>
 
     <footer>
         <div class="container">
@@ -153,5 +157,6 @@
     </footer>
 
     <script src="./src/js/script.js"></script>
+    <script src="./src/js/modal.js"></script> 
 </body>
 </html>
