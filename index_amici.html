@@ -13,7 +13,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/logo/logo.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/logo/logo.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/logo/logo.png">
-    <link rel="manifest" href="./site.webmanifest">
+    <link rel="stylesheet" href="./src/css/mapa.css">
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="theme-color" content="#000000">
 </head>
@@ -78,7 +78,12 @@
                 <div class="contact-card">
                     <i class="fas fa-phone-alt"></i>
                     <h3>Teléfono</h3>
-                    <p>351 731-6964</p>
+                    <p>3541-387884</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>WhatsApp:</h3>
+                    <p>+54 9 3541 38-7884</p>
                 </div>
                 <div class="contact-card">
                     <i class="fas fa-clock"></i>
@@ -88,9 +93,40 @@
                 <div class="contact-card">
                     <i class="fas fa-map-marker-alt"></i>
                     <h3>Ubicación</h3>
-                    <p>Pedidos y retiros en nuestro local</p>
+                    <!-- ACTUALIZA ESTA DIRECCIÓN -->
+                    <p>Calle Real 123, Córdoba, Argentina</p>
                 </div>
             </section>
+
+            <!-- SECCIÓN DEL MAPA ACTUALIZADA -->
+            <section class="map-section">
+                <div class="container">
+                    <div class="section-title">
+                        <h2><i class="fas fa-map-marked-alt"></i> Encuéntranos</h2>
+                        <p>Ven a visitarnos o pide para retirar por nuestro local.</p>
+                    </div>
+                    
+                    <!-- REEMPLAZADO: Contenedor de Leaflet por tu iframe de Google Maps -->
+                    <div class="map-embed-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d6817.6959124335435!2d-64.46668851069397!3d-31.307947198104166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDE4JzI2LjIiUyA2NMKwMjcnNDguMCJX!5e0!3m2!1ses!2sar!4v1765820066938!5m2!1ses!2sar" 
+                            width="100%" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    
+                    <div class="map-info">
+                        <!-- ACTUALIZA LA DIRECCIÓN AQUÍ TAMBIÉN -->
+                        <p><i class="fas fa-info-circle"></i> <strong>Dirección:</strong> Av. Roque Sáenz Peña 47, Bialet Massé</p>
+                        <p><i class="fas fa-car"></i> <strong>Estacionamiento:</strong> Disponible en la puerta.</p>
+                    </div>
+                </div>
+            </section>
+
         </div>
     </main>
 
@@ -111,11 +147,11 @@
                 </div>
                 <div class="footer-contact">
                     <p>Teléfono: <a href="tel:3541682310">3541 68-2310</a></p>
-                    <p>Pedidos: <a href="tel:3541387884">351 731-6964</a></p>
                 </div>
             </div>
         </div>
     </footer>
+
     <script src="./src/js/script.js"></script>
 </body>
 </html>
