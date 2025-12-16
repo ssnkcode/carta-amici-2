@@ -1,0 +1,331 @@
+{
+  "productos": [
+    {
+      "categoria": "PIZZAS",
+      "items": [
+        {
+          "nombre": "Pizza Muzzarella",
+          "precio": "$8.000",
+          "descripcion": "Clásica pizza de muzzarella.",
+          "imagen": "./assets/productos/productos/muzza.webp"
+        },
+        {
+          "nombre": "Promo Muzzarella 2x",
+          "precio": "$14.000",
+          "descripcion": "Dos pizzas de muzzarella a precio especial.",
+          "imagen": "./assets/productos/productos/2x_muzza.webp",
+          "promocion": true
+        },
+        {
+          "nombre": "Pizza Especial",
+          "precio": "$9.000",
+          "descripcion": "Pizza con jamón, morrones y huevo.",
+          "imagen": "./assets/productos/productos/pizza-especial.webp"
+        },
+        {
+          "nombre": "Pizza Especial con Salsa",
+          "precio": "$10.000",
+          "descripcion": "Pizza especial con salsa especial de la casa.",
+          "imagen": "./assets/productos/productos/pizza-especial-salsa.webp"
+        },
+        {
+          "nombre": "Pizza Provenzal",
+          "precio": "$9.000",
+          "descripcion": "Pizza con ajo, perejil y aceite de oliva.",
+          "imagen": "./assets/productos/productos/piza_provenzal.webp"
+        },
+        {
+          "nombre": "Pizza Fugazzeta",
+          "precio": "$9.000",
+          "descripcion": "Pizza con cebolla y queso.",
+          "imagen": "./assets/productos/productos/piza_fugazzeta.webp"
+        },
+        {
+          "nombre": "Pizza 4 Quesos",
+          "precio": "$10.000",
+          "descripcion": "Pizza con cuatro tipos de quesos seleccionados.",
+          "imagen": "./assets/productos/productos/pizza-4-quesos.webp"
+        },
+        {
+          "nombre": "Pizza Capresse",
+          "precio": "$10.000",
+          "descripcion": "Pizza con tomate, albahaca y queso fresco.",
+          "imagen": "./assets/productos/productos/piza_Caprese.webp"
+        },
+        {
+          "nombre": "Pizza Completa",
+          "precio": "$10.000",
+          "descripcion": "Pizza con todos los ingredientes tradicionales.",
+          "imagen": "./assets/productos/productos/pizza-completa.webp"
+        },
+        {
+          "nombre": "Pizza Calabresa",
+          "precio": "$10.000",
+          "descripcion": "Pizza con salame calabrés y especias.",
+          "imagen": "./assets/productos/productos/pizza-calabresa.webp"
+        },
+        {
+          "nombre": "Pizza champiñón",
+          "precio": "$11.000",
+          "descripcion": "Pizza con champiñónes frescos.",
+          "imagen": "./assets/productos/productos/piza_champiñon.webp"
+        },
+        {
+          "nombre": "Pizza Provenzal",
+          "precio": "$11.000",
+          "descripcion": "Pizza con Provenzal.",
+          "imagen": "./assets/productos/productos/piza_provenzal.webp"
+        },
+        {
+          "nombre": "Pizza Rúcula",
+          "precio": "$10.000",
+          "descripcion": "Pizza con rúcula fresca y queso parmesano.",
+          "imagen": "./assets/productos/productos/pizza-rucula.webp"
+        },
+        {
+          "nombre": "Pizza Anchoas",
+          "precio": "$10.000",
+          "descripcion": "Pizza con anchoas de calidad premium.",
+          "imagen": "./assets/productos/productos/piza_anchoa.webp"
+        },
+        {
+          "nombre": "Pizza Choclo",
+          "precio": "$10.000",
+          "descripcion": "Pizza con choclo cremoso.",
+          "imagen": "./assets/productos/productos/piza_choclo.webp"
+        },
+        {
+          "nombre": "Pizza Napolitana",
+          "precio": "$10.000",
+          "descripcion": "Pizza con tomate, ajo y albahaca fresca.",
+          "imagen": "./assets/productos/productos/pizza-napo.webp"
+        },
+        {
+          "nombre": "Pizza Amici",
+          "precio": "$12.000",
+          "descripcion": "Nuestra pizza especial con los ingredientes más exclusivos.",
+          "imagen": "./assets/productos/productos/pizza-amici.webp",
+          "especialidad": true
+        },
+        {
+          "nombre": "Pizza Huevo",
+          "precio": "$9.000",
+          "descripcion": "Pizza con huevo frito sobre la masa.",
+          "imagen": "./assets/productos/productos/piza_huevo.webp"
+        },
+        {
+          "nombre": "Pizza Roquefort",
+          "precio": "$10.000",
+          "descripcion": "Pizza con queso roquefort y nueces.",
+          "imagen": "./assets/productos/productos/piza_roquefort.webp"
+        }
+      ]
+    },
+    {
+      "categoria": "SÁNDWICHES",
+      "items": [
+        {
+          "nombre": "Hamburguesa Clásica",
+          "precio": "$10.000",
+          "descripcion": "Medallón de carne, cebolla morada, cheddar, queso barra.",
+          "imagen": "./assets/productos/productos/hambuguesa.webp"
+        },
+        {
+          "nombre": "Promo Hamburguesa 2x",
+          "precio": "$18.000",
+          "descripcion": "Dos hamburguesas a precio especial. Se pueden combinar.",
+          "imagen": "./assets/productos/productos/dos_hambur.webp",
+          "promocion": true
+        },
+        {
+          "nombre": "Lomo Completo",
+          "precio": "$15.000",
+          "descripcion": "Lomito con todos los ingredientes tradicionales.",
+          "imagen": "./assets/productos/productos/lomo_completo.webp"
+        },
+        {
+          "nombre": "Lomito Simple",
+          "precio": "$10.000",
+          "descripcion": "Lomito con los ingredientes básicos.",
+          "imagen": "./assets/productos/productos/lomito.webp"
+        },
+        {
+          "nombre": "Promo Lomito 2x",
+          "precio": "$18.000",
+          "descripcion": "Dos lomitos a precio especial.",
+          "imagen": "./assets/productos/productos/2x_lomazo.webp",
+          "promocion": true
+        },
+        {
+          "nombre": "Sandwich Milanesa Simple",
+          "precio": "$10.000",
+          "descripcion": "Sándwich de milanesa con ingredientes básicos.",
+          "imagen": "./assets/productos/productos/mila_simple.webp"
+        },
+        {
+          "nombre": "Sandwich Milanesa Completa",
+          "precio": "$12.000",
+          "descripcion": "Sándwich de milanesa con todos los adicionales.",
+          "imagen": "./assets/productos/productos/mila-completa-2-x-20.000.webp"
+        },
+        {
+          "nombre": "Promo Milanesa 2x",
+          "precio": "$20.000",
+          "descripcion": "Dos sándwiches de milanesa a precio especial.",
+          "imagen": "./assets/productos/productos/dos_milas_simple.webp",
+          "promocion": true
+        },
+        {
+          "nombre": "Hamburlomo Simple",
+          "precio": "$14.000",
+          "descripcion": "Combinación de hamburguesa y lomito.",
+          "imagen": "./assets/productos/productos/hamburlo_simple.webp"
+        },
+        {
+          "nombre": "Hamburlomo Doble",
+          "precio": "$18.000",
+          "descripcion": "Doble combinación de hamburguesa y lomito.",
+          "imagen": "./assets/productos/productos/hamburlomo_doble.webp"
+        },
+        {
+          "nombre": "Lomazo",
+          "precio": "$10.000",
+          "descripcion": "Lomito gigante con todos los ingredientes.",
+          "imagen": "./assets/productos/productos/lomazo.webp"
+        },
+        {
+          "nombre": "1/2 Lomo Pizza",
+          "precio": "$18.000",
+          "descripcion": "Media porción de nuestra especialidad Lomo Pizza.",
+          "imagen": "./assets/productos/productos/medio-lomopizza.webp"
+        },
+        {
+          "nombre": "Lomo Pizza Completo",
+          "precio": "$30.000",
+          "descripcion": "Nuestra especialidad: lomo combinado con pizza.",
+          "imagen": "./assets/productos/productos/lomo_pizza.webp",
+          "especialidad": true
+        }
+      ]
+    },
+    {
+      "categoria": "HAMBURGUESAS ESPECIALES",
+      "items": [
+        {
+          "nombre": "Hamburguesa Abusa",
+          "precio": "$10.000",
+          "descripcion": "Medallón de carne, cebolla asada, cheddar, bacon.",
+          "imagen": "./assets/productos/productos/amburlomo-doble.webp"
+        },
+        {
+          "nombre": "Hamburguesa Rúgica",
+          "precio": "$10.000",
+          "descripcion": "Medallón de carne, cebolla morada, cheddar, queso barra.",
+          "imagen": "./assets/productos/productos/Hamburguesa_Rúgica.webp"
+        },
+        {
+          "nombre": "Hamburguesa Doble Tónica",
+          "precio": "$10.000",
+          "descripcion": "Dos medallones de carne con cheddar.",
+          "imagen": "./assets/productos/productos/unnamed.webp"
+        },
+        {
+          "nombre": "Hamburguesa Taremán",
+          "precio": "$10.000",
+          "descripcion": "Medallón de carne, lechuga, tomate, huevo, queso barra.",
+          "imagen": "./assets/productos/productos/hamburguesa_taremán.webp"
+        }
+      ]
+    },
+    {
+      "categoria": "EMPANADAS",
+      "items": [
+        {
+          "nombre": "Empanadas Saladas",
+          "precio": "$11.000",
+          "descripcion": "Deliciosas empanadas saladas con el mejor relleno tradicional.",
+          "imagen": "./assets/productos/productos/variedad-empanadas.webp"
+        },
+        {
+          "nombre": "Empanadas Dulces",
+          "precio": "$11.000",
+          "descripcion": "Empanadas dulces rellenas de membrillo o batata.",
+          "imagen": "./assets/productos/productos/empanadas-dulces.webp"
+        },
+        {
+          "nombre": "Empanadas Jamón y Queso",
+          "precio": "$12.000",
+          "descripcion": "Empanadas rellenas de jamón y queso derretido.",
+          "imagen": "./assets/productos/productos/empanadas-jamon-queso.webp"
+        },
+        {
+          "nombre": "Empanadas P. Cuchillo",
+          "precio": "$12.000",
+          "descripcion": "Empanadas con carne picada a cuchillo.",
+          "imagen": "./assets/productos/productos/empanadas-p-cuchillo.webp"
+        },
+        {
+          "nombre": "Empanadas Pollo",
+          "precio": "$10.000",
+          "descripcion": "Empanadas rellenas de pollo cremoso.",
+          "imagen": "./assets/productos/productos/empanadas-pollo.webp"
+        },
+        {
+          "nombre": "Empanadas Árabes",
+          "precio": "$12.000",
+          "descripcion": "Empanadas árabes con especias tradicionales.",
+          "imagen": "./assets/productos/productos/empanadas-arabes.webp"
+        },
+        {
+          "nombre": "empanadas criollas fritas",
+          "precio": "$9.000",
+          "descripcion": "empanadas criollas deliciosas.",
+          "imagen": "./assets/productos/productos/empanadas_criollas_fritas.webp",
+          "promocion": true
+        },
+        {
+          "nombre": "Promoción 2 Docenas",
+          "precio": "$17.000",
+          "descripcion": "2 docenas de empanadas a un precio especial.",
+          "imagen": "./assets/productos/productos/fritas-docena.webp",
+          "promocion": true
+        },
+        {
+          "nombre": "Media Docena",
+          "precio": "$7.000",
+          "descripcion": "Media docena de empanadas variadas.",
+          "imagen": "./assets/productos/productos/media-empanadas.webp"
+        },
+        {
+          "nombre": "Empanada por Unidad",
+          "precio": "$1.200",
+          "descripcion": "Empanada individual, elige tu sabor favorito.",
+          "imagen": "./assets/productos/productos/empanada-unidad.webp"
+        }
+      ]
+    },
+    {
+      "categoria": "PAPAS",
+      "items": [
+        {
+          "nombre": "Papas Solas",
+          "precio": "$4.500",
+          "descripcion": "Porción de papas fritas crujientes.",
+          "imagen": "./assets/productos/productos/papas-solas.webp"
+        },
+        {
+          "nombre": "Papas con Cheddar",
+          "precio": "$5.500",
+          "descripcion": "Papas fritas bañadas en salsa de cheddar.",
+          "imagen": "./assets/productos/productos/papas-cheddar.webp"
+        },
+        {
+          "nombre": "Papas con Cheddar y Bacon",
+          "precio": "$6.000",
+          "descripcion": "Papas fritas con cheddar y trozos de bacon crocante.",
+          "imagen": "./assets/productos/productos/papas-cheddar_bacon.webp"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,296 @@
+/* imagenes.css - VERSIÓN CORREGIDA */
+
+/* Mejoras para las imágenes de productos */
+.item-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 15px; /* REDUCIDO de 50px a 15px */
+    margin-bottom: 15px;
+    position: relative;
+    background: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; /* Espacio interno para que no toque bordes */
+}
+
+.product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* CAMBIADO de 'contain' a 'cover' */
+    transition: transform 0.3s ease;
+    background: white;
+    border-radius: 10px; /* REDUCIDO de 40px a 10px (más pequeño que el contenedor) */
+    cursor: zoom-in;
+}
+
+/* Para mantener proporciones diferentes */
+.product-img.portrait {
+    object-fit: contain; /* Para retratos mantener contain */
+    width: auto;
+    max-width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    cursor: zoom-in;
+    border-radius: 10px;
+    background: white;
+    padding: 5px;
+}
+
+.product-img.landscape {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    cursor: zoom-in;
+    border-radius: 10px;
+}
+
+.menu-item:hover .product-img {
+    transform: scale(1.05);
+}
+
+/* Efecto hover para indicar que es clickeable */
+.product-img:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Asegurar que las tarjetas tengan altura uniforme */
+.menu-item {
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 15px; /* Mantener consistencia */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 380px; /* Aumentado para acomodar mejor */
+}
+
+.item-header {
+    margin-bottom: 10px;
+    flex-shrink: 0;
+}
+
+.item-description {
+    flex-grow: 1;
+    margin-bottom: 15px;
+    min-height: 60px;
+}
+
+/* Badges posicionados correctamente */
+.promo-badge, .especialidad-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+    padding: 4px 12px;
+    font-size: 0.75rem;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #FFD700 0%, #FFC107 100%);
+    color: #000000;
+    font-weight: 600;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* SOLUCIÓN ALTERNATIVA - Usando clip-path para bordes perfectos */
+.item-image.clip-rounded {
+    border-radius: 0; /* Eliminar border-radius */
+    clip-path: inset(0 round 15px); /* Bordes redondeados perfectos */
+}
+
+.product-img.clip-rounded {
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Botón de ver más */
+.view-more-btn {
+    background: #FFD700;
+    color: #000;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: auto;
+    align-self: flex-start;
+    transition: all 0.3s ease;
+}
+
+.view-more-btn:hover {
+    background: #000;
+    color: #FFD700;
+}
+
+/* ==================== */
+/* MODAL / LIGHTBOX - MEJORADO */
+/* ==================== */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.98);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.modal-overlay.active {
+    display: flex;
+    opacity: 1;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 95vw;
+    max-height: 95vh;
+    width: auto;
+    height: auto;
+    background: transparent;
+    animation: zoomIn 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.modal-img {
+    max-width: 90vw;
+    max-height: 85vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    background: #000;
+}
+
+/* Botón de cerrar - MEJORADO */
+.close-modal {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    color: white;
+    font-size: 3rem;
+    font-weight: 300;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.7);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 10000;
+    padding: 0;
+    line-height: 1;
+}
+
+.close-modal:hover {
+    color: #FFD700;
+    background: rgba(0, 0, 0, 0.9);
+    transform: scale(1.1);
+}
+
+/* Responsive mejorado */
+@media (max-width: 768px) {
+    .item-image {
+        height: 180px;
+        border-radius: 12px; /* Ajustado para móvil */
+    }
+    
+    .product-img {
+        border-radius: 8px;
+    }
+    
+    .menu-item {
+        min-height: 350px;
+        padding: 15px;
+        border-radius: 12px;
+    }
+    
+    .item-description {
+        font-size: 0.9rem;
+        min-height: 50px;
+    }
+    
+    .modal-img {
+        max-width: 95vw;
+        max-height: 80vh;
+    }
+    
+    .close-modal {
+        top: -45px;
+        right: -10px;
+        font-size: 2.5rem;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 480px) {
+    .item-image {
+        height: 160px;
+        border-radius: 10px;
+    }
+    
+    .product-img {
+        border-radius: 6px;
+    }
+    
+    .menu-item {
+        min-height: 320px;
+        border-radius: 10px;
+    }
+    
+    .modal-img {
+        max-width: 98vw;
+        max-height: 75vh;
+    }
+    
+    .close-modal {
+        top: -40px;
+        right: -5px;
+        font-size: 2.2rem;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* CLASE PARA BORDES REDONDEADOS PERFECTOS */
+.rounded-corners {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.rounded-corners img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}

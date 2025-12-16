@@ -1,0 +1,95 @@
+/* Estilos para la sección del mapa */
+.map-section {
+    padding: 4rem 0;
+    background-color: #f9f9f9;
+}
+
+#map {
+    height: 450px; /* Altura del mapa */
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    margin: 1.5rem 0;
+    z-index: 1; /* Asegura que el mapa esté sobre otros elementos */
+}
+
+.map-info {
+    background: white;
+    padding: 1.2rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    font-size: 1rem;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.map-info p {
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+/* Asegura que el mapa se vea bien en móviles */
+@media (max-width: 768px) {
+    #map {
+        height: 350px;
+    }
+    .map-section {
+        padding: 2.5rem 0;
+    }
+}
+
+/* Estilos para el popup del mapa */
+.popup-mapa {
+    text-align: center;
+    padding: 10px;
+    min-width: 200px;
+}
+
+.popup-mapa h4 {
+    color: #e74c3c;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+.popup-mapa hr {
+    margin: 8px 0;
+    border: none;
+    border-top: 1px solid #eee;
+}
+
+.popup-mapa p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.btn-whatsapp-popup {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.btn-whatsapp-popup:hover {
+    background-color: #1da851;
+}
+
+.error-mapa {
+    text-align: center;
+    padding: 2rem;
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 8px;
+    color: #856404;
+}
+
+.marcador-personalizado {
+    background: transparent;
+    border: none;
+}
